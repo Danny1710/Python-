@@ -10,3 +10,9 @@ def count_if_triple(list_of_ints):
             count_if_triple(list(set(elem)))    
     return count
         
+def count_triple(list_ints):
+  count = 0
+  for ele in list_ints:
+    if isinstance(ele, int) and ele % 3 == 0:
+      count +=1
+  return count
